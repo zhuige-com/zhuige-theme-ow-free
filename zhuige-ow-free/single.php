@@ -6,7 +6,7 @@
 		zhuige_theme_ow_free_update_post_view_count();
 	?>
 		<!--顶部大标题-->
-		<div class="zhuige-main-title pb-30">
+		<div class="zhuige-main-title mb-30">
 			<div class="zhuige-main-title-text">
 				<h1><?php the_title(); ?></h1>
 				<p>

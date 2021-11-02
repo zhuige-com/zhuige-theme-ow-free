@@ -113,7 +113,7 @@ input:-ms-input-placeholder {
 
 html, body{
   width: 100%;
-  font-family: "黑体", "Helvetica Neue", "微软雅黑", Helvetica,, "宋体", sans-serif;
+  font-family: "Helvetica Neue", "微软雅黑", Helvetica, sans-serif;
 }
 body{
   line-height: 1.15;

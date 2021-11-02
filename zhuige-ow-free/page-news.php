@@ -33,15 +33,15 @@
 				while ($the_query->have_posts()) {
 					$the_query->the_post();
 					$thumbnail = zhuige_theme_ow_free_thumbnail_src(); ?>
-					<div class="zhuige-article-list-block d-flex">
+					<div class="zhuige-article-list-block d-flex align-items-center">
 						<div class="zhuige-article-list-block-img">
 							<a href="<?php the_permalink() ?>" target="_blank"><img alt="" src="<?php echo $thumbnail; ?>"></a>
 						</div>
 						<div class="zhuige-article-list-block-text">
 							<a href="<?php the_permalink() ?>" target="_blank">
-								<h6 class="mt-10 mb-10"><?php the_title() ?></h6>
-								<div class="mb-30"><?php echo wp_trim_words(strip_tags(apply_filters('the_content', $post->post_content)), 100, '...'); ?></div>
-								<p>
+								<h6><?php the_title() ?></h6>
+								<div><?php echo wp_trim_words(strip_tags(apply_filters('the_content', $post->post_content)), 100, '...'); ?></div>
+								<p class="mt-10">
 									<cite><?php echo get_the_time('Y年m月d日'); ?></cite>/
 									<cite>浏览 <?php zhuige_theme_ow_free_post_detail_view_count(); ?></cite>
 								</p>

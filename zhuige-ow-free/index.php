@@ -108,7 +108,9 @@ if (zhuige_theme_ow_free_option('home_slide_switch', '1')) :
 												<h6>
 													<a href="<?php echo get_permalink($goods['id']) ?>" title="<?php echo $goods['title'] ?>"><?php echo $goods['title'] ?></a>
 												</h6>
-												<img src="<?php echo $goods['thumbnail'] ?>" alt="" />
+												<a href="<?php echo get_permalink($goods['id']) ?>" title="<?php echo $goods['title'] ?>">
+													<img src="<?php echo $goods['thumbnail'] ?>" alt="" />
+												</a>
 											</div>
 										<?php } ?>
 									</div>
@@ -165,19 +167,21 @@ if (zhuige_theme_ow_free_option('home_slide_switch', '1')) :
 					</div>
 
 					<!-- 新闻列表 -->
-					<div class="zhuige-news row d-flex flex-nowrap mb-20">
-						<div class="zhuige-news-side md-5">
+					<div class="zhuige-news row d-flex flex-nowrap-md flex-wrap-xs pb-20 mb-20">
+						<div class="zhuige-news-side md-5 xs-12 mb-10">
 							<div class="zhuige-img-news">
 								<h5>
 									<a href="<?php echo get_permalink($first->ID) ?>" target="_blank" title="<?php echo $first->post_title; ?>">
 										<?php echo $first->post_title; ?>
 									</a>
 								</h5>
-								<img src="<?php echo zhuige_theme_ow_free_thumbnail_src_d($first->ID, $first->post_content); ?>" alt="" />
+								<a href="<?php echo get_permalink($first->ID) ?>" target="_blank" title="<?php echo $first->post_title; ?>">
+									<img src="<?php echo zhuige_theme_ow_free_thumbnail_src_d($first->ID, $first->post_content); ?>" alt="" />
+								</a>
 							</div>
 						</div>
 
-						<div class="zhuige-news-list md-7">
+						<div class="zhuige-news-list md-7 xs-12">
 							<?php foreach ($post_list as $post) { ?>
 								<div class="zhuige-article-list-block d-flex align-items-center">
 									<div class="zhuige-article-list-block-img">
@@ -217,21 +221,21 @@ if (zhuige_theme_ow_free_option('home_slide_switch', '1')) :
 						<label>姓名:</label>
 						<input type="text" placeholder="" class="input-username">
 					</div>
-					<div class="row d-flex flex-nowrap justify-content-between">
-						<div class="md-6">
+					<div class="row d-flex flex-nowrap-md flex-wrap-xs justify-content-between">
+						<div class="md-6 xs-12">
 							<div class="zhuige-form-line d-flex">
 								<label>电话:</label>
 								<input type="text" placeholder="" class="input-phone">
 							</div>
 						</div>
-						<div class="md-6">
+						<div class="md-6 xs-12">
 							<div class="zhuige-form-line d-flex">
 								<label>E-mail:</label>
 								<input type="text" placeholder="" class="input-email">
 							</div>
 						</div>
 					</div>
-					<div class="zhuige-form-height-line d-flex">
+					<div class="zhuige-form-height-line d-flex flex-nowrap-md flex-wrap-xs">
 						<label>请输入留言内容:</label>
 						<textarea placeholder="" class="input-content"></textarea>
 					</div>
@@ -278,7 +282,7 @@ if (zhuige_theme_ow_free_option('home_slide_switch', '1')) :
 					<p>Cooperation</p>
 				</div>
 				<!-- 合作伙伴 -->
-				<div class="zhuige-cooperation d-flex flex-nowrap justify-content-center mb-30">
+				<div class="zhuige-cooperation d-flex flex-nowrap-md flex-wrap-xs justify-content-center mb-30">
 					<?php foreach ($friends as $friend) { ?>
 						<a href="<?php echo $friend['url']; ?>" target="_blank" title="<?php echo $friend['title']; ?>">
 							<img src="<?php echo $friend['image']; ?>" alt="<?php echo $friend['title']; ?>" />

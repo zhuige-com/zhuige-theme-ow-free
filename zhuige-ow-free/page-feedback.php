@@ -10,7 +10,7 @@ Template Name: 追格-留言反馈
 <div class="zhuige-main-body zhugie-header-fix zhuige-gray">
 
 	<!--顶部大标题-->
-	<div class="zhuige-main-title pb-30">
+	<div class="zhuige-main-title mb-30">
 		<div class="zhuige-main-title-text">
 			<h1>留言反馈</h1>
 			<p>Feedback</p>
@@ -35,21 +35,21 @@ Template Name: 追格-留言反馈
 					<label>姓名:</label>
 					<input type="text" placeholder="" class="input-username">
 				</div>
-				<div class="row d-flex flex-nowrap justify-content-between">
-					<div class="md-6">
+				<div class="row d-flex flex-nowrap-md flex-wrap-xs justify-content-between">
+					<div class="md-6 xs-12">
 						<div class="zhuige-form-line d-flex">
 							<label>电话:</label>
 							<input type="text" placeholder="" class="input-phone">
 						</div>
 					</div>
-					<div class="md-6">
+					<div class="md-6 xs-12">
 						<div class="zhuige-form-line d-flex">
 							<label>E-mail:</label>
 							<input type="text" placeholder="" class="input-email">
 						</div>
 					</div>
 				</div>
-				<div class="zhuige-form-height-line d-flex">
+				<div class="zhuige-form-height-line d-flex flex-nowrap-md flex-wrap-xs">
 					<label>请输入留言内容:</label>
 					<textarea placeholder="" class="input-content"></textarea>
 				</div>
