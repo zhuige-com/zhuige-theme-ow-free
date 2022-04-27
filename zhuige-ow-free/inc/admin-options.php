@@ -19,6 +19,8 @@ CSF::createOptions($prefix, array(
     'menu_title' => '追格官网主题',
     'menu_slug'  => 'zhuige-theme-ow-free',
     'menu_position' => 2,
+    'show_bar_menu' => false,
+    'show_sub_menu' => false,
     'footer_credit' => 'Thank you for creating with <a href="https://www.zhuige.com/" target="_blank">追格</a>',
 ));
 
@@ -54,7 +56,7 @@ CSF::createSection($prefix, array(
 //
 CSF::createSection($prefix, array(
     'title' => '基础设置',
-    'icon'  => 'fas fa-map-marker',
+    'icon'  => 'fas fa-cubes',
     'fields' => array(
 
         array(
@@ -82,7 +84,7 @@ CSF::createSection($prefix, array(
 CSF::createSection($prefix, array(
     'id'    => 'home',
     'title' => '首页设置',
-    'icon'  => 'fas fa-plus-circle',
+    'icon'  => 'fas fa-home',
     'fields' => array(
 
         array(
@@ -230,7 +232,7 @@ CSF::createSection($prefix, array(
 
 CSF::createSection($prefix, array(
     'title'       => '公司动态',
-    'icon'        => 'fas fa-shield-alt',
+    'icon'        => 'fas fa-globe-asia',
     'fields'      => array(
 
         array(
@@ -255,7 +257,7 @@ foreach ($pages as $page) {
 }
 CSF::createSection($prefix, array(
     'title'       => '关于我们',
-    'icon'        => 'fas fa-shield-alt',
+    'icon'        => 'fas fa-user-tie',
     'fields'      => array(
 
         array(
@@ -284,7 +286,7 @@ CSF::createSection($prefix, array(
 
 CSF::createSection($prefix, array(
     'title'       => '留言反馈',
-    'icon'        => 'fas fa-shield-alt',
+    'icon'        => 'fab fa-whatsapp',
     'fields'      => array(
 
         array(
@@ -302,7 +304,7 @@ CSF::createSection($prefix, array(
 //
 CSF::createSection($prefix, array(
     'title' => '页脚设置',
-    'icon'  => 'fas fa-redo',
+    'icon'  => 'fas fa-copyright',
     'fields' => array(
 
         array(

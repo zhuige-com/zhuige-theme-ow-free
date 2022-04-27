@@ -13,10 +13,10 @@ function zhuige_theme_ow_free_feedback()
 {
     header("Content-Type: application/json");
 
-    $username = isset($_POST["username"]) ? $_POST["username"] : '';
-    $phone = isset($_POST["phone"]) ? $_POST["phone"] : '';
-    $email = isset($_POST["email"]) ? $_POST["email"] : '';
-    $content = isset($_POST["content"]) ? $_POST["content"] : '';
+    $username = isset($_POST["username"]) ? sanitize_text_field(wp_unslash($_POST["username"])) : '';
+    $phone = isset($_POST["phone"]) ? sanitize_text_field(wp_unslash($_POST["phone"])) : '';
+    $email = isset($_POST["email"]) ? sanitize_text_field(wp_unslash($_POST["email"])) : '';
+    $content = isset($_POST["content"]) ? sanitize_text_field(wp_unslash($_POST["content"])) : '';
 
     if (empty($username)) {
         echo json_encode(['code' => 1, 'error' => '请填写姓名']);

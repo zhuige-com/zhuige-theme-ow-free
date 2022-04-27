@@ -193,7 +193,7 @@ if (zhuige_theme_ow_free_option('home_slide_switch', '1')) :
 										<a href="<?php echo get_permalink($post->ID) ?>" target="_blank">
 											<h6 class="mt-10 mb-10"><?php echo $post->post_title; ?></h6>
 											<p>
-												<cite>2022年7月16日</cite>
+												<cite><?php echo get_the_time('Y年m月d日'); ?></cite>
 											</p>
 										</a>
 									</div>
