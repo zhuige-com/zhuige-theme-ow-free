@@ -22,6 +22,7 @@ CSF::createOptions($prefix, array(
     'show_bar_menu' => false,
     'show_sub_menu' => false,
     'footer_credit' => 'Thank you for creating with <a href="https://www.zhuige.com/" target="_blank">追格</a>',
+    'menu_icon' => 'dashicons-layout',
 ));
 
 $content = '欢迎使用追格企业官网主题（开源版）! <br/><br/> 微信客服：jianbing2011 (加开源群、问题咨询、项目定制、购买咨询) <br/><br/> <a href="https://www.zhuige.com" target="_blank">更多免费产品</a>';

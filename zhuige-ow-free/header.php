@@ -7,8 +7,9 @@
 	<title><?php zhuige_theme_ow_free_seo_title() ?></title>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>?ver=1">
-	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css" rel="stylesheet" />
-	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/v4-shims.min.css" rel="stylesheet" />
+	<!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/v4-shims.min.css" rel="stylesheet" /> -->
+	
 </head>
 
 <body>

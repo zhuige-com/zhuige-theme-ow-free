@@ -6,7 +6,7 @@
 
 **主题演示**：https://ow.jiangqie.com/
 
-**主题下载**：https://gitee.com/longwenjunj/zhuige_theme_ow_free
+**主题下载**：https://gitee.com/zhuige_com/zhuige_theme_ow_free
 
 
 ### 联系交流 
