@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>?ver=1">
 	<!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css" rel="stylesheet" />
 	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/v4-shims.min.css" rel="stylesheet" /> -->
-	
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/fontawesome-free@5.14.0.all.min.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/fontawesome-free@5.14.0.v4-shims.min.css">
 </head>
 
 <body>
