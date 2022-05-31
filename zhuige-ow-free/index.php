@@ -207,7 +207,7 @@ if (zhuige_theme_ow_free_option('home_slide_switch', '1')) :
 	<?php endif;
 	endif; ?>
 
-	<?php if (zhuige_theme_ow_free_option('home_news_switch', '1')) : ?>
+	<?php if (zhuige_theme_ow_free_option('home_feedback_switch', '1')) : ?>
 		<div class="zhuige-base-block zhuige-gray mb-30">
 			<div class="container">
 				<div class="zhuige-base-title">
