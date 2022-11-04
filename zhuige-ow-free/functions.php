@@ -396,8 +396,8 @@ function zhuige_theme_ow_free_custom_pagenavi($custom_query, $range = 4)
     // if (!$max_page) {
     $max_page = $custom_query->max_num_pages;
     // }
+    echo "<div class='zhui-pagination'>";
     if ($max_page > 1) {
-        echo "<div class='zhui-pagination'>";
         if (!$paged) {
             $paged = 1;
         }
@@ -437,6 +437,6 @@ function zhuige_theme_ow_free_custom_pagenavi($custom_query, $range = 4)
             echo "<a href='" . get_pagenum_link($max_page) . "' class='' title='跳转到最后一页'>尾页</a>";
         }
         // echo '<span>共[' . $max_page . ']页</span>';
-        echo "</div>";
     }
+    echo "</div>";
 }

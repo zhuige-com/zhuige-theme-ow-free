@@ -26,7 +26,7 @@
 
 4. 追格企业官网主题：[https://www.zhuige.com/product/gwztfree.html](https://www.zhuige.com/product/gwztfree.html)
 
-5. 追格积分商城小程序：[https://www.zhuige.com/product/jf.html](https://www.zhuige.com/product/jf.html)
+5. 追格积-分商城小程序：[https://www.zhuige.com/product/jf.html](https://www.zhuige.com/product/jf.html)
 
 6. 追格商城小程序：[https://www.zhuige.com/product/sc.html](https://www.zhuige.com/product/sc.html)
 
