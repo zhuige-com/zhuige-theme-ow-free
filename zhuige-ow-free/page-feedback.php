@@ -56,10 +56,6 @@ Template Name: 追格-留言反馈
 				<div class="zhuige-form-btn d-flex pb-10">
 					<button type="submit">提交</button>
 				</div>
-				<!-- <div class="zhuige-form-tips p-10">
-					<i class="fa fa-check-circle"></i>
-					<text>提交成功</text>
-				</div> -->
 			</div>
 
 		</div>
