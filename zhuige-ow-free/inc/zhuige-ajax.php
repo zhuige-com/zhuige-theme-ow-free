@@ -52,4 +52,3 @@ function zhuige_theme_ow_free_feedback()
     echo json_encode(['code' => 0]);
     die;
 }
-

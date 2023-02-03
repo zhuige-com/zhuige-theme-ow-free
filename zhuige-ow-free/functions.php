@@ -1,4 +1,12 @@
 <?php
+
+/**
+ * 追格企业官网主题（开源版）由追格（www.zhuige.com）开发的一款免费开源的WordPress主题，专为企业建站而设计。
+ * 文档：https://www.zhuige.com/product/gwztfree.html
+ * gitee：https://gitee.com/zhuige_com/zhuige_theme_ow_free
+ * github：https://github.com/zhuige-com/zhuige-theme-ow-free
+ */
+
 require_once TEMPLATEPATH . '/inc/codestar-framework/codestar-framework.php';
 require_once TEMPLATEPATH . '/inc/admin-options.php';
 require_once TEMPLATEPATH . '/inc/zhuige-pages.php';
@@ -33,8 +41,7 @@ function zhuige_theme_ow_free_theme_init()
     // 注册脚本
     wp_register_script('lib-script', $url . '/js/lib/lb.js', [], '0.3');
     wp_register_script('lib-layer', $url . '/js/layer/layer.js', ['jquery'], '1.0', false);
-    wp_register_script('jq-footer-script', $url . '/js/zhuige.footer.js', ['jquery','lib-layer'], '0.3', true);
-
+    wp_register_script('jq-footer-script', $url . '/js/zhuige.footer.js', ['jquery', 'lib-layer'], '0.3', true);
 
     // 其它需要在init action处运行的脚本
 }

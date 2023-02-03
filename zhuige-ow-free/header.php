@@ -18,7 +18,7 @@
 	<header>
 
 		<!--主导航-->
-		<nav class="container d-flex flex-nowrap align-items-center justify-content-between-md justify-content-center-xs">					
+		<nav class="container d-flex flex-nowrap align-items-center justify-content-between-md justify-content-center-xs">
 			<a href="<?php echo home_url() ?>" class="logo d-flex align-items-center">
 				<?php zhuige_theme_ow_free_site_logo() ?>
 				<span><?php bloginfo('name') ?></span>

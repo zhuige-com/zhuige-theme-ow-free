@@ -251,7 +251,7 @@ $pageOptions = [];
 $about_doc_nav_default = [];
 foreach ($pages as $page) {
     $template = get_post_meta($page->ID, '_wp_page_template', true);
-    if ($template== 'page-about.php') {
+    if ($template == 'page-about.php') {
         $pageOptions[$page->ID] = $page->post_title;
         $about_doc_nav_default[] = $page->ID;
     }

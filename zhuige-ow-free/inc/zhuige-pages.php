@@ -49,7 +49,7 @@ function zhuige_theme_ow_free_add_page_action()
     //判断是否为激活主题页面   
     if ('themes.php' == $pagenow && isset($_GET['activated'])) {
         //页面标题"登录页面",别名login,页面模板page-login.php   
-        
+
         zhuige_theme_ow_free_add_page('留言反馈', 'feedback', 'page-feedback.php', '追格主题占位页-请勿修改');
         zhuige_theme_ow_free_add_page('文章资讯', 'news', 'page-news.php', '追格主题占位页-请勿修改');
 

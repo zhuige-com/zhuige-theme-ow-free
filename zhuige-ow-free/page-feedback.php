@@ -16,14 +16,14 @@ Template Name: 追格-留言反馈
 			<p>Feedback</p>
 		</div>
 		<?php
-			$background = zhuige_theme_ow_free_option('feedback_background');
-			if ($background && $background['url']) {
-				$background = $background['url'];
-			} else {
-				$background = get_template_directory_uri() . '/images/single_header.png';
-			}
-			?>
-			<img src="<?php echo $background; ?>" alt="" />
+		$background = zhuige_theme_ow_free_option('feedback_background');
+		if ($background && $background['url']) {
+			$background = $background['url'];
+		} else {
+			$background = get_template_directory_uri() . '/images/single_header.png';
+		}
+		?>
+		<img src="<?php echo $background; ?>" alt="" />
 	</div>
 
 	<div class="zhuige-main-cont">

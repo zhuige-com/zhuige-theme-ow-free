@@ -436,6 +436,9 @@ footer {
 }
 
 .zhuige-goods-block h6 a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
 	font-size: 13px;
 	color: #FFFFFF;
 }
@@ -799,6 +802,9 @@ footer {
 }
 
 .zhuige-img-news h5 a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
 	font-size: 13px;
 	color: #FFFFFF;
 }
