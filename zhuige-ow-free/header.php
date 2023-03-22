@@ -1,3 +1,9 @@
+<?php
+if (!defined('ABSPATH')) {
+	die;
+} // Cannot access directly.
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -32,6 +38,7 @@
 						<li class="<?php echo (strpos($_SERVER['REQUEST_URI'], '/news') === false ? '' : 'nav-activ'); ?>"><a href="/news">公司动态</a></li>
 						<li class="<?php echo (strpos($_SERVER['REQUEST_URI'], '/about') === false ? '' : 'nav-activ'); ?>"><a href="/about">关于我们</a></li>
 						<li class="<?php echo (strpos($_SERVER['REQUEST_URI'], '/feedback') === false ? '' : 'nav-activ'); ?>"><a href="/feedback">留言反馈</a></li>
+						<li><a href="https://www.zhuige.com/product.html?cat=23" target="_blank">更多开源主题</a></li>
 					</ul>
 				</div>
 			</div>

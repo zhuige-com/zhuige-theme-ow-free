@@ -4,6 +4,12 @@ Template Name: 追格-关于我们
 */
 ?>
 
+<?php
+if (!defined('ABSPATH')) {
+	die;
+} // Cannot access directly.
+?>
+
 <?php get_header(); ?>
 
 <!--主内容区-->

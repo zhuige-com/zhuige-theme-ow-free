@@ -24,7 +24,7 @@ function zhuige_theme_ow_free_add_menu_items_feedback()
 		'activate_plugins',					// Capability.
 		'zhuige_theme_ow_free_feedback',				// Menu slug.
 		'zhuige_theme_ow_free_render_feedback',		// Callback function.
-		'',
+		'dashicons-feedback',
 		3
 	);
 }

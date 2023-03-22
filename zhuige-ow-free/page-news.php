@@ -1,3 +1,9 @@
+<?php
+if (!defined('ABSPATH')) {
+	die;
+} // Cannot access directly.
+?>
+
 <?php get_header(); ?>
 
 <!--主内容区-->

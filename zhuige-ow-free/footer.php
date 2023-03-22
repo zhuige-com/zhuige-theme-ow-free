@@ -1,3 +1,9 @@
+<?php
+if (!defined('ABSPATH')) {
+	die;
+} // Cannot access directly.
+?>
+
 <!--页脚-->
 <!--导航右侧附加功能H5-->
 <div class="zhuige-nav-side d-flex flex-nowrap zhuige-nav-mobile">
@@ -21,7 +27,7 @@
 		<div class="zhuige-footer-links d-flex">
 			<span>
 				主题设计
-				<a href="https://www.zhuige.com" title="追格">追格（zhuige.com）</a>
+				<a href="https://www.zhuige.com" target="_blank" title="追格">追格（zhuige.com）</a>
 			</span>
 		</div>
 	</div>

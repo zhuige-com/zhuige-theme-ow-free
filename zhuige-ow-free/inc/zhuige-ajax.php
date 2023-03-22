@@ -4,6 +4,10 @@
  * 追格企业官网主题（开源版）由追格（www.zhuige.com）开发的一款免费开源的WordPress主题，专为企业建站而设计。
  */
 
+if (!defined('ABSPATH')) {
+    die;
+} // Cannot access directly.
+
 /**
  * 点赞功能
  */
@@ -50,5 +54,53 @@ function zhuige_theme_ow_free_feedback()
     ]);
 
     echo json_encode(['code' => 0]);
+    die;
+}
+
+/**
+ * 市场相关
+ */
+add_action('wp_ajax_nopriv_zhuige_market_event', 'zhuige_market_event');
+add_action('wp_ajax_zhuige_market_event', 'zhuige_market_event');
+function zhuige_market_event()
+{
+    $action = isset($_POST["zgaction"]) ? sanitize_text_field(wp_unslash($_POST["zgaction"])) : '';
+
+    if ($action == 'get_list') { // 查询产品
+        $cat = isset($_POST["cat"]) ? (int)($_POST["cat"]) : 0;
+        $params = [];
+        if ($cat) {
+            $params['cat'] = $cat;
+        }
+
+        $free = isset($_POST["free"]) ? sanitize_text_field($_POST["free"]) : '';
+        if ($free !== '') {
+            $params['free'] = $free;
+        }
+
+        $init = isset($_POST["init"]) ? (int)($_POST["init"]) : 0;
+        if ($init == 1) {
+            $params['init'] = $init;
+        }
+
+        $response = wp_remote_post("https://www.zhuige.com/api/market/list", array(
+            'method'      => 'POST',
+            'body'        => $params
+        ));
+
+        if (is_wp_error($response) || $response['response']['code'] != 200) {
+            wp_send_json_error();
+        }
+
+        $data = json_decode($response['body'], TRUE);
+        $datadata = $data['data'];
+
+        if ($data['code'] == 1) {
+            wp_send_json_success($datadata);
+        } else {
+            wp_send_json_error();
+        }
+    }
+
     die;
 }

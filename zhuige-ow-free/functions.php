@@ -7,8 +7,13 @@
  * github：https://github.com/zhuige-com/zhuige-theme-ow-free
  */
 
+ if (!defined('ABSPATH')) {
+     die;
+ } // Cannot access directly.
+
 require_once TEMPLATEPATH . '/inc/codestar-framework/codestar-framework.php';
 require_once TEMPLATEPATH . '/inc/admin-options.php';
+require_once TEMPLATEPATH . '/inc/zhuige-market.php';
 require_once TEMPLATEPATH . '/inc/zhuige-pages.php';
 require_once TEMPLATEPATH . '/inc/zhuige-dashboard.php';
 require_once TEMPLATEPATH . '/inc/zhuige-feedback.php';
@@ -133,7 +138,7 @@ function zhuige_theme_ow_free_handle_external_redirects()
     }
 
     if ('zhuige_theme_ow_free_upgrade' === $_GET['page']) {
-        wp_redirect('https://www.zhuige.com');
+        wp_redirect('https://www.zhuige.com/product/gwzt.html');
         die;
     }
 }
