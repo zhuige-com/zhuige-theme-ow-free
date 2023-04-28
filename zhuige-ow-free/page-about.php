@@ -17,6 +17,7 @@ if (!defined('ABSPATH')) {
 	<?php
 	$page_ids = zhuige_theme_ow_free_option('about_doc_nav');
 	if (!$page_ids || empty($page_ids)) {
+		$page_ids = [];
 		$pages = get_pages();
 		foreach ($pages as $page) {
 			$template = get_post_meta($page->ID, '_wp_page_template', true);
