@@ -128,16 +128,14 @@ function zhuige_theme_ow_free_on_admin_init()
 
 function zhuige_theme_ow_free_handle_external_redirects()
 {
-    if (empty($_GET['page'])) {
-        return;
-    }
+	$page = isset($_GET['page']) ? $_GET['page'] : '';
 
-    if ('zhuige_theme_ow_free_setup' === $_GET['page']) {
+    if ('zhuige_theme_ow_free_setup' === $page) {
         wp_redirect('https://www.zhuige.com/docs/gwztfree');
         die;
     }
 
-    if ('zhuige_theme_ow_free_upgrade' === $_GET['page']) {
+    if ('zhuige_theme_ow_free_upgrade' === $page) {
         wp_redirect('https://www.zhuige.com/product/gwzt.html');
         die;
     }
