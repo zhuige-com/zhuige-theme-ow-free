@@ -155,8 +155,12 @@ function zhuige_theme_ow_free_thumbnail_src_d($post_id, $post_content)
     $post_thumbnail_src = '';
     if (has_post_thumbnail($post_id)) {    //如果有特色缩略图，则输出缩略图地址
         $thumbnail_src = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'full');
-        $post_thumbnail_src = $thumbnail_src[0];
-    } else {
+        if (is_array($thumbnail_src) && count($thumbnail_src) > 0) {
+            $post_thumbnail_src = $thumbnail_src[0];
+        }
+    } 
+    
+    if (empty($post_thumbnail_src)) {
         ob_start();
         ob_end_clean();
         $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post_content, $matches);
