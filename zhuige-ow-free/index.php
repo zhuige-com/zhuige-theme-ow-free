@@ -226,25 +226,25 @@ if (zhuige_theme_ow_free_option('home_slide_switch', '1')) :
 				<div class="zhuige-feed-form">
 					<div class="zhuige-form-line d-flex">
 						<label>姓名:</label>
-						<input type="text" placeholder="" class="input-username">
+						<input type="text" placeholder="请输入姓名" class="input-username">
 					</div>
 					<div class="row d-flex flex-nowrap-md flex-wrap-xs justify-content-between">
 						<div class="md-6 xs-12">
 							<div class="zhuige-form-line d-flex">
 								<label>电话:</label>
-								<input type="text" placeholder="" class="input-phone">
+								<input type="text" placeholder="请输入联系电话" class="input-phone">
 							</div>
 						</div>
 						<div class="md-6 xs-12">
 							<div class="zhuige-form-line d-flex">
 								<label>E-mail:</label>
-								<input type="text" placeholder="" class="input-email">
+								<input type="text" placeholder="请输入Email" class="input-email">
 							</div>
 						</div>
 					</div>
 					<div class="zhuige-form-height-line d-flex flex-nowrap-md flex-wrap-xs">
 						<label>请输入留言内容:</label>
-						<textarea placeholder="" class="input-content"></textarea>
+						<textarea placeholder="您的留言对我们很重要" class="input-content"></textarea>
 					</div>
 					<div class="zhuige-form-btn d-flex pb-10">
 						<button type="submit">提交</button>

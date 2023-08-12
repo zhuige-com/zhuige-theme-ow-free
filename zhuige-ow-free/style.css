@@ -729,6 +729,27 @@ footer {
     width: 80%;
 }
 
+.zhuige-form-line input::input-placeholder {
+    color: #CCC;
+    font-size: 13px;
+    font-weight: 300;
+}
+.zhuige-form-line input::-webkit-input-placeholder {
+    color: #CCC;
+    font-size: 13px;
+    font-weight: 300;
+}
+.zhuige-form-height-line textarea::input-placeholder {
+    color: #CCC;
+    font-size: 13px;
+    font-weight: 300;
+}
+.zhuige-form-height-line textarea::-webkit-input-placeholder {
+    color: #CCC;
+    font-size: 13px;
+    font-weight: 300;
+}
+
 .zhuige-form-line label,
 .zhuige-form-height-line label {
     width: 80px;
@@ -853,6 +874,7 @@ footer {
     z-index: 10;
     right: 10%;
     bottom: 100px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
