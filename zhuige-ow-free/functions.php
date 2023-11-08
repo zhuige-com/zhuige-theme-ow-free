@@ -47,6 +47,7 @@ function zhuige_theme_ow_free_theme_init()
     wp_register_script('lib-script', $url . '/js/lib/lb.js', [], '0.3');
     wp_register_script('lib-layer', $url . '/js/layer/layer.js', ['jquery'], '1.0', false);
     wp_register_script('jq-footer-script', $url . '/js/zhuige.footer.js', ['jquery', 'lib-layer'], '0.3', true);
+    wp_register_script('jq-index-script', $url . '/js/zhuige.index.js', ['jquery', 'lib-script', 'lib-layer'], '0.8', true);
 
     // 其它需要在init action处运行的脚本
 }
@@ -59,6 +60,10 @@ function zhuige_theme_ow_free_scripts()
     wp_enqueue_script('jquery');
     wp_enqueue_script('lib-script');
     wp_enqueue_script('jq-footer-script');
+
+    if (is_home()) {
+        wp_enqueue_script('jq-index-script');
+    }
 }
 add_action('wp_enqueue_scripts', 'zhuige_theme_ow_free_scripts');
 

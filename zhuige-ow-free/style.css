@@ -4,7 +4,7 @@ Theme URI: https://www.zhuige.com/product/gwztfree.html
 Author: the 追格
 Author URI: https://www.zhuige.com/
 Description: 追格企业官网主题（开源版）由追格（www.zhuige.com）开发的一款免费开源的WordPress主题，专为企业建站而设计。
-Version: 1.1.5
+Version: 1.1.6
 Requires PHP: 7.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -972,4 +972,13 @@ footer {
         top: 70px;
         height: auto;
     }
+}
+
+body .layui-layer-noboxshade{
+    background: 0 0;
+    box-shadow: none;
+}
+
+body .layui-layer-noboxshade .layui-layer-content {
+    overflow: hidden;
 }

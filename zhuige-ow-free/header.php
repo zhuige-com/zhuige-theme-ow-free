@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.1.1">
 	<title><?php zhuige_theme_ow_free_seo_title() ?></title>
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>?ver=1">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>?ver=<?php echo filemtime(get_stylesheet_directory() . '/style.css') ?>">
 	<!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css" rel="stylesheet" />
 	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/v4-shims.min.css" rel="stylesheet" /> -->
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/fontawesome-free@5.14.0.all.min.css">

@@ -298,30 +298,10 @@ if (zhuige_theme_ow_free_option('home_slide_switch', '1')) :
 
 </div>
 
-<script>
-	window.onload = function() {
-		const options = {
-			id: 'lb-1', // 轮播盒ID
-			speed: 600, // 轮播速度(ms)
-			delay: 3000, // 轮播延迟(ms)
-			direction: 'left', // 图片滑动方向
-			moniterKeyEvent: true, // 是否监听键盘事件
-			moniterTouchEvent: true // 是否监听屏幕滑动事件
-		}
-		const lb = new Lb(options);
-		lb.start();
-
-		const options2 = {
-			id: 'lb-2', // 轮播盒ID
-			speed: 600, // 轮播速度(ms)
-			delay: 3000, // 轮播延迟(ms)
-			direction: 'left', // 图片滑动方向
-			moniterKeyEvent: true, // 是否监听键盘事件
-			moniterTouchEvent: true // 是否监听屏幕滑动事件
-		}
-		const lb2 = new Lb(options2);
-		lb2.start();
-	}
-</script>
+<div id="home-ad-pop" style="display: none;">
+	<a class="home-ad-pop-link" href="" target="_blank">
+		<img class="home-ad-pop-image" src="" style="height: 60vh;" />
+	</a>
+</div>
 
 <?php get_footer(); ?>
