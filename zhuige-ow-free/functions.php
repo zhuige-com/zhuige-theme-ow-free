@@ -459,3 +459,24 @@ function zhuige_theme_ow_free_custom_pagenavi($custom_query, $range = 4)
     }
     echo "</div>";
 }
+
+/**
+ * 判断当前地址是否和导航菜单匹配
+ */
+function zhuige_ow_free_menu_active($menu_url)
+{
+    $requrl = $_SERVER['REQUEST_URI'];
+
+    if ($menu_url == '/' || $menu_url == home_url()) {
+        return ($requrl == '/' ? 'nav-activ' : '');
+    }
+
+    // 去除url中的域名部分
+    $menu_url = str_replace(get_bloginfo('url'), '', $menu_url);
+
+    if (strpos($requrl, $menu_url) === false) {
+        return '';
+    }
+
+    return 'nav-activ';
+}

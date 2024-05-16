@@ -34,11 +34,23 @@ if (!defined('ABSPATH')) {
 			<div class="zhuige-nav-side d-flex flex-nowrap">
 				<div class="zhuige-nav">
 					<ul class="zhuige-nav-list">
-						<li class="<?php echo (is_home() ? 'nav-activ' : ''); ?>"><a href="/">首页</a></li>
-						<li class="<?php echo (strpos($_SERVER['REQUEST_URI'], '/news') === false ? '' : 'nav-activ'); ?>"><a href="/news">公司动态</a></li>
-						<li class="<?php echo (strpos($_SERVER['REQUEST_URI'], '/about') === false ? '' : 'nav-activ'); ?>"><a href="/about">关于我们</a></li>
-						<li class="<?php echo (strpos($_SERVER['REQUEST_URI'], '/feedback') === false ? '' : 'nav-activ'); ?>"><a href="/feedback">留言反馈</a></li>
-						<li><a href="https://www.zhuige.com/product.html?cat=23" target="_blank">更多开源主题</a></li>
+						<?php
+						$menus = zhuige_theme_ow_free_option('home_menu');
+						if (is_array($menus) && count($menus) > 0) {
+							foreach ($menus as $menu) {
+								$target = ($menu['target'] ? ' target="_blank"' : '');
+								echo '<li class="' . zhuige_ow_free_menu_active($menu['link']). '"><a href="'. $menu['link']. '" ' . $target . '>'. $menu['title']. '</a></li>';
+							}
+						} else {
+						?>
+							<li class="<?php echo zhuige_ow_free_menu_active(home_url()); ?>"><a href="<?php echo home_url() ?>">首页</a></li>
+							<li class="<?php echo zhuige_ow_free_menu_active(home_url('/news')); ?>"><a href="<?php echo home_url('/news') ?>">公司动态</a></li>
+							<li class="<?php echo zhuige_ow_free_menu_active(home_url('/about')); ?>"><a href="<?php echo home_url('/about') ?>">关于我们</a></li>
+							<li class="<?php echo zhuige_ow_free_menu_active(home_url('/feedback')); ?>"><a href="<?php echo home_url('/feedback') ?>">留言反馈</a></li>
+							<li><a href="https://www.zhuige.com/product.html?cat=23" target="_blank">更多开源主题</a></li>
+						<?php
+						}
+						?>
 					</ul>
 				</div>
 			</div>

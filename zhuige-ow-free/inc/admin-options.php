@@ -87,6 +87,32 @@ CSF::createSection($prefix, array(
     'title' => '首页设置',
     'icon'  => 'fas fa-home',
     'fields' => array(
+        array(
+            'id'     => 'home_menu',
+            'type'   => 'group',
+            'title'  => '顶部菜单',
+            'fields' => array(
+                array(
+                    'id'          => 'title',
+                    'type'        => 'text',
+                    'title'       => '标题',
+                    'placeholder' => '标题',
+                ),
+                array(
+                    'id'       => 'link',
+                    'type'     => 'text',
+                    'title'    => '链接',
+                    'default'  => 'https://www.zhuige.com',
+                    'validate' => 'csf_validate_url',
+                ),
+                array(
+                    'id'    => 'target',
+                    'type'  => 'switcher',
+                    'title' => '新页面打开',
+                    'default' => '',
+                )
+            ),
+        ),
 
         array(
             'id'     => 'home_slide',
